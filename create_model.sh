@@ -5,7 +5,7 @@
 #tableName=mmx_blog
 #the directory where is scala class created, if not, default current directory
 #target_folder=/home/michael/scala/
-target_folder="/Users/michael/Google Drive/EverBox/code/scalaTest/src/main/scala/model/"
+target_folder="/Users/michael/Google Drive/EverBox/code/scala-mvc/src/main/scala/model/"
 
 #database info
 dbHost=10.11.200.233
