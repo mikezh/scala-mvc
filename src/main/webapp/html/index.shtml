@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>首页</title>
+	</head>
+	<body>
+	<div>发布消息:</div>
+	<div>
+		选择心情:<s value="MessageService.getMyMoods()"/>
+	</div>
+	<div>
+		<textarea cols="20" rows="5"></textarea>
+	</div>
+	<div>
+		<input type="button" value="发布" onclick=""/>
+	</div>
+	<div>
+	<for items="MessageService.getMyMessage()" val="mm">
+		<div>
+			<div><x value="$mm.create_time"/>|心情:<x value="$mm.moods"/></div>
+			<div><x value="$mm.content"/></div>
+			<div>评论:</div>
+			<for items="MessageService.getComments($mm.id)">
+				ssdfasd
+			</for>
+		</div>
+	</for>
+	</div> 
+	</body>
+</html>

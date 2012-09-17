@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<div>==========div===========
+<s value="TestService.second($a,$b,$c)"/>
+<br/>
+<x value="$a"/><br/>
+<x value="$b"/><br/>
+<x value="$c"/>
+		<hr/>
+			<for items="TestService.five(2)">
+				hahahah
+				<p/>
+				<ul>
+					<li>ID:</li>
+					<li>姓名:<x value="$.name"/></li>
+					<li>地址:<x value="$.address.city"/>,<x value="$.address.address"/></li>
+				</ul>
+			</for>
+			<hr/>
+			<for items="TestService.five(2)" val="x">
+				hahahah
+				<p/>
+				<ul>
+					<li>ID:</li>
+					<li>姓名:<x value="$x.name"/></li>
+					<li>地址:<x value="$x.address.city"/>,<x value="$x.address.address"/></li>
+				</ul>
+			</for><hr/>
+			<ul>
+				<for items="TestService.four(1,2,3,5)" val="i">
+					<for items="TestService.four(6,7,8)" val="j">
+						<li>$=><if test="TestService.six($i)"><x value="$i"/></if>,
+							<if test="TestService.six($j)"><x value="$j"/></if>
+						</li>
+						<li>$12=><s value="TestService.second($i,$j)"/><br/></li>
+					</for>
+				</for>
+			</ul>
+</div>
