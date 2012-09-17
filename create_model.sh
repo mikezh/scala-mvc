@@ -5,13 +5,13 @@
 #tableName=mmx_blog
 #the directory where is scala class created, if not, default current directory
 #target_folder=/home/michael/scala/
-target_folder="/Users/michael/Google Drive/EverBox/code/scala-mvc/src/main/scala/model/"
+target_folder="/home/"
 
 #database info
-dbHost=10.11.200.233
-dbUser=devuser
-dbPass=devuser
-dbName=yy
+dbHost=
+dbUser=
+dbPass=
+dbName=
 
 #database table name prefix
 table_prefix=mmx_
