@@ -14,7 +14,7 @@ dbPass=
 dbName=
 
 #database table name prefix
-table_prefix=mmx_
+table_prefix=xxx_
 
 tables=`mysql -u$dbUser -p$dbPass -h$dbHost $dbName <<EOF | tail -n +2 
 show tables; 
